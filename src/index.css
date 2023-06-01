@@ -1,0 +1,68 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,body,#root{
+  height: 100%;
+  width: 100%;
+}
+
+img{
+width: 100%;
+}
+
+li{
+  list-style: none;
+}
+
+button{
+  border: none;
+}
+
+.form-container{
+
+
+margin: auto;
+width: 500px;
+padding: 1rem;
+position: absolute;
+left: 50%;
+margin-left: -250px;
+top: 50%;
+margin-top: -175px;
+}
+
+@media (max-width: 450px){
+
+.form-container{
+ width: 300px;
+  margin-left: -150px;
+}
+
+
+}
+
+.bxs-x-circle{
+  font-size: 2.5rem;
+  transition: font-size ease-out 0.03ms;
+}
+
+.bxs-trash,
+.bxs-edit-alt,
+.bxs-x-circle:hover{
+  cursor: pointer;
+  font-size: 3rem;
+  bottom: 0.5rem;
+  right: 0.5rem;
+}
+
+.btn-create{
+  width: 200px;
+  position: fixed;
+  bottom: 20px;
+  right: calc(50%);
+  margin-right: -100px;
+  
+}
