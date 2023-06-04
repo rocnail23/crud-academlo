@@ -68,7 +68,7 @@ const Form = ({ createUser,update,updateUser, closeAndOpenForm}) => {
     </div>
     <div className="input-group mb-2">
     <span className="input-group-text">correo</span>
-       <input value={email} onChange={handleChange} name='email' type="email" className="form-control"/>
+       <input value={email} autoComplete='username' onChange={handleChange} name='email' type="email" className="form-control"/>
     </div>
     <div className="input-group mb-2">
        <span className="input-group-text">contraseña</span>
