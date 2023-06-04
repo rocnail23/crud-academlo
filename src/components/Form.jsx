@@ -42,11 +42,7 @@ const Form = ({ createUser,update,updateUser, closeAndOpenForm}) => {
       email: "",
       })
       
-
    }
-
-
- 
 
    useEffect(() => {
 
@@ -72,7 +68,7 @@ const Form = ({ createUser,update,updateUser, closeAndOpenForm}) => {
     </div>
     <div className="input-group mb-2">
     <span className="input-group-text">correo</span>
-       <input value={email} onChange={handleChange} name='email' type="text" className="form-control"/>
+       <input value={email} onChange={handleChange} name='email' type="email" className="form-control"/>
     </div>
     <div className="input-group mb-2">
        <span className="input-group-text">contraseña</span>
@@ -80,7 +76,7 @@ const Form = ({ createUser,update,updateUser, closeAndOpenForm}) => {
     </div>
     <div className="input-group mb-4">
        <span className="input-group-text">fecha de nacimiento</span>
-       <input value={birthday} onChange={handleChange} name='birthday' type="text" className="form-control"/>
+       <input value={birthday} onChange={handleChange} name='birthday' type="date" className="form-control"/>
     </div>
     <button className='btn btn-success'>{update ? "actualizar": "registrar"}</button>
     </form>
